@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00000052;
+    background: url('img/background.jpg') no-repeat center center/cover;
+    margin: 0;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow-y: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que el fondo permanezca estático */
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.header h1, .reasons-section h2, .celebration-section h2 {
+    background-color: rgba(209, 36, 200, 0.308);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(2px);
+}
+
+.time-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.time-box {
+    background-color: rgba(56, 38, 216, 0.247);
+    border-radius: 20px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.reason-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px 0;
+    backdrop-filter: blur(10px);
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #db34cd;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #db34cd;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.image-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #db34cd;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.image-button:hover {
+    background-color: #db34cd;
+}
+
+.image-display {
+    display: none;
+    margin-top: 20px;
+}
+
+.image-display img {
+    max-width: 80%;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.reason-list-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.089); /* Fondo blanco translúcido */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(02px);
+}
+
+.reason-item {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333; /* Color del texto */
+}

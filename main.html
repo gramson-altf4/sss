@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles-main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Tiempo que llevamos juntos</h1>
+            <div class="time-container">
+                <div class="time-box">Años: <span id="years"></span></div>
+                <div class="time-box">Meses: <span id="months"></span></div>
+                <div class="time-box">Semanas: <span id="weeks"></span></div>
+                <div class="time-box">Días: <span id="days"></span></div>
+                <div class="time-box">Horas: <span id="hours"></span></div>
+                <div class="time-box">Minutos: <span id="minutes"></span></div>
+                <div class="time-box">Segundos: <span id="seconds"></span></div>
+            </div>
+        </header>
+
+        <section class="reasons-section">
+            <h2>Razones por las que te amo</h2>
+            <div class="reason-list-container">
+            <ul id="reason-list" class="reason-list"></ul>
+            <button id="generate-reason" class="button">Mostrar razón</button>
+        </section>
+
+        <section class="celebration-section">
+            <h2>Felices 10 meses:</h2>
+            <div class="buttons-container">
+                <button class="image-button" onclick="showImage('img/1.jpg')">No sé cómo iniciar</button>
+                <button class="image-button" onclick="showImage('img/2.jpg')">Siempre quiero agradecerte</button>
+                <button class="image-button" onclick="showImage('img/3.jpg')">Te amaré toda la vida</button>
+                <button class="image-button" onclick="showImage('img/4.jpg')">Eres mi razón de ser</button>
+            </div>
+        </section>
+
+        <div id="image-display" class="image-display">
+            <img id="displayed-image" src="" alt="Imagen" />
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
